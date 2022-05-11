@@ -1,3 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:ital,wght@0,200;1,300&family=Sarala:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:ital,wght@0,200;1,300&family=Sarala:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./img/comidas.jpg);
+    background-size: cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+h2{
+    font-size: 30px;
+    color: rgb(248, 247, 247);
+    text-align: center;
+    margin: 20px;
+}
+h3{
+    font-size: 30px;
+    color: rgb(49, 214, 16);
+    text-align: center;
+    margin: 20px;
+}
+.cor-texto{ 
+     font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px;
+
+}
+.texto-cor{
+    font-size: 30px;
+    color: rgb(49, 214, 16);
+    text-align: center;
+    margin: 20px;
+    
+}
+.capa{
+    width: 350px;
+    background: rgba(0, 0, 0, 0.507);
+    border-radius: 20% 0;
+    box-shadow: 1px 2px 10px #000, 3px 6px 20px #000 ;
+    padding: 50px 20px;
+}
+input{
+    width: 100%;
+    height: 46px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    transition: .25s ease-in-out;
+}
+.input-field{
+    position: relative;
+    margin-bottom: 20px;
+}
+label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    transform: translatey(18px);
+    transition: .25s ease-in-out;
+}
+input:focus{
+    border-bottom: 2px solid #26a96a;
+    box-shadow: 0 1px 0 0 #26a96a;
+}
+input:focus+label{
+    transform: translate(-14px) scale(.8);
+    color: #26a96a;
+    font-weight: bold;
+
+}
+input:not(:placeholder-shown)+label{
+    transform: translate(-14px) scale(.8);
+    color: #26a96a;
+    font-weight: bold;
+}
+input:not(:placeholder-shown){
+    border-bottom: 2px solid #26a96a;
+    box-shadow: 0 1px 0 0 #26a96a;  
+}
+input::placeholder{
+    color: transparent;
+}
+b{
+    padding: 14px 50px;
+    margin: 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-in-out .25s;
+}
+
+b:hover{
+        background: rgba(255, 0, 0, 0.5);
+    }
+
+.center{
+    text-align: center;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out .25s;
+}
+a:hover{
+    color: #26a96a;
+}
+@media only screen and (max-400px){
+    body{
+        background: url(./img/R.jpg);
+    } 
+    body{
+    width: 100vw;
+    }   
+}
